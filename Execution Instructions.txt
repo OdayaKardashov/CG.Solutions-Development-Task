@@ -1,0 +1,14 @@
+1. Open the command line inside the root folder ("PlayersWebService")
+
+2. run the following command:
+
+java -jar target/Players-Web-Service-1.0-SNAPSHOT.jar server PlayersWebService.yml
+
+3. Open a web browser window and send requests to the web service using the following format:
+
+	localhost:8080/create-player?name=<name> - Create a new player with the given name
+	(the player's id is auto created)
+	
+	http://localhost:8080/get-players?sort=id - retrieve all players sorted by their id
+	http://localhost:8080/get-players?sort=name - retrieve all players sorted by their name
+	
